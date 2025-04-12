@@ -1,0 +1,67 @@
+.body {
+    width: 300px;
+    min-height: 100px;
+    font-size: 14px;
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size h3,
+.colors h3 {
+    margin: 15px 0 5px;
+}
+
+#loader img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+div#alert-message {
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 0px;
+    max-width: 200px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+div#alert-message a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#export-button {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#export-button a {
+    padding: 10px 20px;
+    background: green;
+    margin: 10px auto 0px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
