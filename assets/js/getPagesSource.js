@@ -25,6 +25,7 @@ function DOMtoString(document_root) {
     return html;
 }
 
+// Send the page source to the extension
 chrome.runtime.sendMessage({
     action: "getSource",
     source: DOMtoString(document)

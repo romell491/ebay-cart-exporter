@@ -50,14 +50,17 @@ chrome.tabs.query({
      if(!onCartPage){
         $('#alert-message').show(500);
         return;
-	 }else{
-    chrome.tabs.executeScript(null, {
-        file: "assets/js/getPagesSource.js"
-    });
+	 } else {
+        // Use the scripting API for Manifest V3
+        chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            files: ["assets/js/getPagesSource.js"]
+        });
     }
   });     	
 	
 }
+
 function scrapMatchDetails(html,CsvTitle) {
     var productsList = new Array(CsvTitle);
     num=0
