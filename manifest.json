@@ -1,7 +1,7 @@
 {
   "name": "Ebay Cart Exporter",
   "description": "This extension exports ebay.com cart products link, title, status, quantity and other attributes into Excel/CSV file",
-  "version": "1.2.1",
+  "version": "1.3",
   "manifest_version": 3,
   "icons": { 
     "16": "assets/images/cart-16.png",
